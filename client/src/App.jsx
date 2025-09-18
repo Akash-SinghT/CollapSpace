@@ -5,7 +5,7 @@ import Login from "./components/Auth/Login";
 import Dashboard from "./pages/Dashboard";
 
 import { useSelector } from "react-redux";
-import SelectRole from "./pages/Selectrole";
+import SelectRole from "./pages/SelectRole";
 import OAuthSuccess from "./components/Auth/OAuthSucess";
 
 const App = () => {
