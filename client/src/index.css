@@ -1,0 +1,56 @@
+@import "tailwindcss";
+/* Reusable classes */
+/* spinner.css */
+
+body {
+  @apply min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 text-white;
+}
+
+/* Optional: ensure full height for root div */
+#root {
+  min-height: 100vh;
+}
+.spinner {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Card container for login/signup forms */
+.form-card {
+  @apply bg-indigo-900 rounded-2xl p-8 border border-indigo-700 shadow-2xl;
+}
+
+/* Input fields for login/signup */
+.form-input {
+  @apply w-full px-4 py-3 bg-indigo-800 border border-indigo-700 rounded-lg focus:ring-2 focus:ring-cyan-400 outline-none transition-all;
+}
+
+/* Error messages */
+.error-text {
+  @apply text-red-400 text-sm mt-1;
+}
+
+/* Gradient buttons */
+.btn-gradient {
+  @apply w-full py-3 px-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold rounded-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 shadow-lg flex items-center justify-center;
+}
+
+/* Social login buttons */
+.btn-social {
+  @apply py-2.5 px-4 bg-indigo-800 border border-indigo-700 rounded-lg hover:bg-indigo-700 transition-all flex items-center justify-center;
+}
